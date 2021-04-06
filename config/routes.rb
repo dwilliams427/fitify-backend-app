@@ -19,11 +19,7 @@ Rails.application.routes.draw do
     delete "/workouts/:id", controller: "workouts", action: "destroy"
 
     #workout_exercises
-    get "/workout_exercises", controller: "workout_exercises", action: "index"
-    get "/workout_exercises/:id", controller: "workout_exercises", action: "show"
     post "/workout_exercises", controller: "workout_exercises", action: "create"
-    patch "/workout_exercises/:id", controller: "workout_exercises", action: "update"
-    delete "/workout_exercises/:id", controller: "workout_exercises", action: "destroy"
 
     #user
     post "/users", controller: "users", action: "create"
