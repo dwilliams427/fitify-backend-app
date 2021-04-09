@@ -2,4 +2,7 @@
   id: workout.id,
   user_id: workout.user_id,
   name: workout.name,
+  exercises: [
+    workout.exercises,
+  ],
 }
