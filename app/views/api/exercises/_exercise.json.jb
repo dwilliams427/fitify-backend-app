@@ -3,7 +3,7 @@
   name: exercise.name,
   length: exercise.length,
   reps: exercise.reps,
-  quantity: exercise.quantity,
+  sets: exercise.sets,
   user_id: exercise.user_id,
   image_url: exercise.image_url,
   video_url: exercise.video_url,

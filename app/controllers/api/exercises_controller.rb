@@ -11,7 +11,7 @@ class Api::ExercisesController < ApplicationController
       name: params[:name],
       length: params[:length],
       reps: params[:reps],
-      quantity: params[:quantity],
+      sets: params[:sets],
       image_url: params[:image_url],
       video_url: params[:video_url],
       user_id: current_user.id,
@@ -33,7 +33,7 @@ class Api::ExercisesController < ApplicationController
     @exercise.name = params[:name] || @exercise.name
     @exercise.length = params[:length] || @exercise.length
     @exercise.reps = params[:reps] || @exercise.reps
-    @exercise.quantity = params[:quantity] || @exercise.quantity
+    @exercise.sets = params[:sets] || @exercise.sets
     @exercise.user_id = params[:user_id] || @exercise.user_id
     @exercise.image_url = params[:image_url] || @exercise.image_url
     @exercise.video_url = params[:video_url] || @exercise.video_url
