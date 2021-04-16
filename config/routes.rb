@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
     #workout_exercises
     post "/workout_exercises", controller: "workout_exercises", action: "create"
+    delete "/workout_exercises", controller: "workout_exercises", action: "destroy"
+    get "/workout_exercises/:id", controller: "workout_exercises", action: "show"
 
     #user
     post "/users", controller: "users", action: "create"

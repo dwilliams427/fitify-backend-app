@@ -1,0 +1,6 @@
+{
+  id: workout_exercise.id,
+  workout_id: workout_exercise.workout_id,
+  exercise_id: workout_exercise.exercise_id,
+
+}
