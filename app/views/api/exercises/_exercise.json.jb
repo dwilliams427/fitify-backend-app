@@ -1,7 +1,7 @@
 {
   id: exercise.id,
   name: exercise.name,
-  length: exercise.length,
+  time: exercise.time,
   reps: exercise.reps,
   sets: exercise.sets,
   user_id: exercise.user_id,

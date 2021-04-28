@@ -9,7 +9,7 @@ class Api::ExercisesController < ApplicationController
   def create
     @exercise = Exercise.new(
       name: params[:name],
-      length: params[:length],
+      time: params[:time],
       reps: params[:reps],
       sets: params[:sets],
       image_url: params[:image_url],
@@ -31,7 +31,7 @@ class Api::ExercisesController < ApplicationController
   def update
     @exercise = Exercise.find_by(id: params[:id])
     @exercise.name = params[:name] || @exercise.name
-    @exercise.length = params[:length] || @exercise.length
+    @exercise.time = params[:time] || @exercise.time
     @exercise.reps = params[:reps] || @exercise.reps
     @exercise.sets = params[:sets] || @exercise.sets
     @exercise.user_id = params[:user_id] || @exercise.user_id
