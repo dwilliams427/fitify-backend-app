@@ -9,6 +9,7 @@ class Api::WorkoutsController < ApplicationController
   def create
     @workout = Workout.new(
       name: params[:name],
+      image_url: params[:image_url],
       user_id: current_user.id,
     )
     if @workout.save
@@ -26,6 +27,7 @@ class Api::WorkoutsController < ApplicationController
   def update
     @workout = Workout.find_by(id: params[:id])
     @workout.name = params[:name] || @workout.name
+    @workout.image_url = params[:image_url] || @workout.image_url
     @workout.user_id = params[:user_id] || @workout.user_id
 
     if @workout.save
