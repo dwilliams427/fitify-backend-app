@@ -2,7 +2,7 @@ class Api::WorkoutsController < ApplicationController
   before_action :authenticate_user, except: [:index, :show]
 
   def index
-    @workout = Workout.all
+    @workout = Workout.where(user_id: current_user.id)
     render "index.json.jb"
   end
 
