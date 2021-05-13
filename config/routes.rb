@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 
+  root "api/workouts#index"
+
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
   namespace :api do
     #exercises
