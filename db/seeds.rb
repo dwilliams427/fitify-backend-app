@@ -4,9 +4,10 @@
 # Examples:
 #
 
-user1 = User.create({ username: "daniel", email: "dw@example.com" })
-user2 = User.create({ username: "jimmy", email: "jw@example.com" })
-user3 = User.create({ username: "jaybee", email: "jb@example.com" })
+user1 = User.create({ username: "daniel", email: "dw@example.com", password: "password" })
+user2 = User.create({ username: "jimmy", email: "jw@example.com", password: "password" })
+user3 = User.create({ username: "jaybee", email: "jb@example.com", password: "password" })
+user4 = User.create({ username: "jaycee", email: "jc@example.com", password: "password" })
 
 push_ups = Exercise.create(name: "Push Ups", time: 60, reps: 30, sets: 3, user_id: 3, image_url: "https://cdn.prod.openfit.com/uploads/2017/06/01150749/how-to-get-better-at-push-ups2.jpg")
 sit_ups = Exercise.create(name: "Sit Ups", time: 60, reps: 30, sets: 3, user_id: 3, image_url: "https://3i133rqau023qjc1k3txdvr1-wpengine.netdna-ssl.com/wp-content/uploads/2014/08/Full-Sit-Up_Exercise.jpg")
