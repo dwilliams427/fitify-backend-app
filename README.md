@@ -1,5 +1,7 @@
 # README
 
+This project is split up into backend (Rails) and frontend (Vue.js). The Frontend can be found here: https://github.com/dwilliams427/fitify-frontend-app
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
