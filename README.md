@@ -13,7 +13,7 @@ In your terminal run:
 rails db:create 
 ```
 
-Uncomment the seeds.rb file.
+# Uncomment the seeds.rb file.
 
 In your terminal:
 ```
