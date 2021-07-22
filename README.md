@@ -19,15 +19,12 @@ In your terminal:
 ```
 rails db:seed
 ```
-
-### Compiles and hot-reloads for development
+then:
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+bundle install
 ```
 
-* ...
+### Finally, run this to get your server up and running:
+```
+rails s
+```
