@@ -5,22 +5,29 @@ This project is split up into backend (Rails) and frontend (Vue.js). The Fronten
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Make sure you have the latest version and Ruby and Rails installed and clone this repo.
 
-* Ruby version
+## Project setup in your project folder.
+In your terminal run:
+```
+rails db:create 
+```
 
-* System dependencies
+Uncomment the seeds.rb file.
 
-* Configuration
+In your terminal:
+```
+rails db:seed
+```
 
-* Database creation
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+### Compiles and minifies for production
+```
+npm run build
+```
 
 * ...
